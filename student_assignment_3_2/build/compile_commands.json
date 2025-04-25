@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignment_3_2/build",
+  "command": "/usr/bin/c++  -isystem /usr/local/include/opencv4 -g -o CMakeFiles/Main.dir/src/main.cpp.o -c /home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignment_3_2/src/main.cpp",
+  "file": "/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignment_3_2/src/main.cpp",
+  "output": "CMakeFiles/Main.dir/src/main.cpp.o"
+}
+]
