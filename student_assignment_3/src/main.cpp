@@ -27,16 +27,16 @@ int main() {
     imshow("Gaussian Noise", image_gausian_noise);
     imshow("Salt and paper", image_salt_and_papar_noise);
 
+    
+
     // Loop until a key is pressed or windows are closed
     while (true) {
         int key = waitKey(1); // Wait for 1 ms for any key press
         if (key == 'q' || key == 27) { // Exit on 'q' or ESC key
             break;
         }
-        // OpenCV automatically breaks the loop if all windows are closed
     }
 
-    // Destroy all windows (optional, as they close automatically on program exit)
     destroyAllWindows();
     return 0;
 }
