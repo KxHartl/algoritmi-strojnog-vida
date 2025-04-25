@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbe_1/build",
+  "command": "/usr/bin/c++   -g -std=c++17 -o CMakeFiles/cpp.dir/src/test.cpp.o -c /home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbe_1/src/test.cpp",
+  "file": "/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbe_1/src/test.cpp",
+  "output": "CMakeFiles/cpp.dir/src/test.cpp.o"
+}
+]

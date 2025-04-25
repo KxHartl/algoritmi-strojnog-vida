@@ -25,6 +25,6 @@ int main() {
     // Create a window
     cv::namedWindow("Filtered Image", cv::WINDOW_AUTOSIZE);
 
-    waitKey(0); // Wait for key press
+    cv::waitKey(0); // Wait for key press
     return 0;
 }

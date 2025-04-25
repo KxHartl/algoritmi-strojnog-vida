@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbe_4/build",
+  "command": "/usr/bin/c++  -isystem /usr/local/include/opencv4 -g -o CMakeFiles/vjezbe4.dir/src/vjezbe_4.cpp.o -c /home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbe_4/src/vjezbe_4.cpp",
+  "file": "/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbe_4/src/vjezbe_4.cpp",
+  "output": "CMakeFiles/vjezbe4.dir/src/vjezbe_4.cpp.o"
+}
+]

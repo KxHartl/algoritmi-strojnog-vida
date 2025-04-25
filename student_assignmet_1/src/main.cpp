@@ -1,64 +1,62 @@
-#include <opencv2/opencv.hpp>
 #include <iostream>
+#include <vector>
+#include <algorithm> // for std::sort
+#include <limits> // for std::numeric_limits
 
-// Global variables
-cv::Mat image, filteredImage;
-int kernelSize = 3; // Default kernel size for filters
+// Function to perform binary search on a sorted vector
+int binarySearch(const std::vector<int>& arr, int target) {
+    int left = 0;
+    int right = arr.size() - 1;
 
-// Callback function for the trackbar
-void applyFilters(int, void*) {
-    // Apply bilateral filter
-    cv::bilateralFilter(image, filteredImage, kernelSize, kernelSize * 2, kernelSize / 2);
-    
-    // Display the filtered image
-    cv::imshow("Filtered Image", filteredImage);
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+        if (arr[mid] == target) {
+            return mid; // target found, return index
+        } else if (arr[mid] < target) {
+            left = mid + 1;
+        } else {
+            right = mid - 1;
+        }
+    }
+    return -1; // target not found
 }
 
 int main() {
-    // Load the input image
-    image = cv::imread("data/parts.png", cv::IMREAD_COLOR);
-    if (image.empty()) {
-        std::cerr << "Error: Could not load image!" << std::endl;
-        return -1;
+    // Initialize vector with 20 random integers
+    std::vector<int> arr = {34, 7, 23, 32, 5, 62, 78, 1, 9, 12, 45, 67, 89, 21, 3, 8, 15, 27, 50, 40};
+
+    // Sort the vector for binary search
+    std::sort(arr.begin(), arr.end());
+
+    std::cout << "Sorted array: ";
+    for (int num : arr) {
+        std::cout << num << " ";
     }
+    std::cout << std::endl;
 
-    // Convert to grayscale if needed
-    if (image.channels() == 3) {
-        cv::cvtColor(image, image, cv::COLOR_BGR2GRAY);
+    while (true) {
+        std::cout << "Enter a number to search (or type 'exit' to quit): ";
+        std::string input;
+        std::getline(std::cin, input);
+
+        if (input == "exit") {
+            break;
+        }
+
+        try {
+            int target = std::stoi(input);
+            int index = binarySearch(arr, target);
+            if (index != -1) {
+                std::cout << "Number found at index: " << index << std::endl;
+            } else {
+                std::cout << "Number not found in the array." << std::endl;
+            }
+        } catch (const std::invalid_argument& e) {
+            std::cout << "Invalid input. Please enter a valid integer." << std::endl;
+        } catch (const std::out_of_range& e) {
+            std::cout << "Number out of range. Please enter a smaller integer." << std::endl;
+        }
     }
-
-    // Create a window
-    cv::namedWindow("Filtered Image", cv::WINDOW_AUTOSIZE);
-
-    // Create a trackbar to adjust kernel size
-    cv::createTrackbar("Kernel Size", "Filtered Image", &kernelSize, 15, applyFilters);
-
-    // Apply filters initially
-    applyFilters(0, 0);
-
-    // Wait for user interaction
-    cv::waitKey(0);
-
-    // Morphological Hit-or-Miss to find corners of a rectangle
-    cv::Mat hitMissResult;
-    
-    // Define kernels for hit-or-miss (example for detecting corners)
-    cv::Mat kernel1 = (cv::Mat_<int>(3, 3) << -1, -1, -1,
-                                              -1,  1, -1,
-                                              -1, -1, -1);
-                                              
-    cv::Mat kernel2 = (cv::Mat_<int>(3, 3) << -1,  0, -1,
-                                               0,  1,  0,
-                                              -1,  0, -1);
-
-    // Apply hit-or-miss operation
-    cv::morphologyEx(image, hitMissResult, cv::MORPH_HITMISS, kernel1);
-    
-    // Display the hit-or-miss result
-    cv::imshow("Hit-or-Miss Result", hitMissResult);
-
-    // Wait for user interaction before closing
-    cv::waitKey(0);
 
     return 0;
 }

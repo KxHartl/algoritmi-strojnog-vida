@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_a
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/run_main.dir/all
+all: CMakeFiles/Main.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/run_main.dir/clean
+clean: CMakeFiles/Main.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/run_main.dir
+# Target rules for target CMakeFiles/Main.dir
 
 # All Build rule for target.
-CMakeFiles/run_main.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_main.dir/build.make CMakeFiles/run_main.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_main.dir/build.make CMakeFiles/run_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignmet_1/build/CMakeFiles --progress-num=1,2 "Built target run_main"
-.PHONY : CMakeFiles/run_main.dir/all
+CMakeFiles/Main.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignmet_1/build/CMakeFiles --progress-num=1,2 "Built target Main"
+.PHONY : CMakeFiles/Main.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/run_main.dir/rule: cmake_check_build_system
+CMakeFiles/Main.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignmet_1/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/run_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignmet_1/build/CMakeFiles 0
-.PHONY : CMakeFiles/run_main.dir/rule
+.PHONY : CMakeFiles/Main.dir/rule
 
 # Convenience name for target.
-run_main: CMakeFiles/run_main.dir/rule
-.PHONY : run_main
+Main: CMakeFiles/Main.dir/rule
+.PHONY : Main
 
 # clean rule for target.
-CMakeFiles/run_main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_main.dir/build.make CMakeFiles/run_main.dir/clean
-.PHONY : CMakeFiles/run_main.dir/clean
+CMakeFiles/Main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/clean
+.PHONY : CMakeFiles/Main.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

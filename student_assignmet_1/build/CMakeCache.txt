@@ -226,15 +226,6 @@ student_assignmet_1_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 student_assignmet_1_SOURCE_DIR:STATIC=/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignmet_1
 
-//Value Computed by CMake
-vjezbe_2_BINARY_DIR:STATIC=/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignmet_1/build
-
-//Value Computed by CMake
-vjezbe_2_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-vjezbe_2_SOURCE_DIR:STATIC=/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignmet_1
-
 
 ########################
 # INTERNAL cache entries
