@@ -16,9 +16,7 @@ int main() {
     rectangle(image, Rect(18, 18, 3, 3), Scalar(255), -1);
     
     // Step 2: Resize image
-    Mat resized;
-    resize(image, resized, Size(), 8, 8, INTER_NEAREST);
-    imshow("Original", resized);
+    resize(image, image, Size(), 8, 8, INTER_NEAREST);
     
     // Step 3: Create kernels for each corner type
     // Top-left corner kernel
@@ -47,18 +45,19 @@ int main() {
     
     // Step 4: Apply morphological hit-or-miss for each corner
     Mat hit_tl, hit_tr, hit_bl, hit_br;
-    morphologyEx(resized, hit_tl, MORPH_HITMISS, kernel_tl);
-    morphologyEx(resized, hit_tr, MORPH_HITMISS, kernel_tr);
-    morphologyEx(resized, hit_bl, MORPH_HITMISS, kernel_bl);
-    morphologyEx(resized, hit_br, MORPH_HITMISS, kernel_br);
+    morphologyEx(image, hit_tl, MORPH_HITMISS, kernel_tl);
+    morphologyEx(image, hit_tr, MORPH_HITMISS, kernel_tr);
+    morphologyEx(image, hit_bl, MORPH_HITMISS, kernel_bl);
+    morphologyEx(image, hit_br, MORPH_HITMISS, kernel_br);
     
     // Step 5: Combine results using bitwise_or
-    Mat result = Mat::zeros(resized.size(), CV_8UC1);
+    Mat result = Mat::zeros(image.size(), CV_8UC1);
     bitwise_or(hit_tl, hit_tr, result);
     bitwise_or(result, hit_bl, result);
     bitwise_or(result, hit_br, result);
     
     // Step 6: Display the combined result
+    imshow("Original", image);
     imshow("Corner Detection", result);
     
     // Step 7: Write resulting image to a local file
