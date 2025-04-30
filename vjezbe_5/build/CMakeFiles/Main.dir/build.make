@@ -69,28 +69,28 @@ include CMakeFiles/Main.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Main.dir/flags.make
 
-CMakeFiles/Main.dir/src/main.cpp.o: CMakeFiles/Main.dir/flags.make
-CMakeFiles/Main.dir/src/main.cpp.o: /home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbe_5/src/main.cpp
-CMakeFiles/Main.dir/src/main.cpp.o: CMakeFiles/Main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbe_5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Main.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Main.dir/src/main.cpp.o -MF CMakeFiles/Main.dir/src/main.cpp.o.d -o CMakeFiles/Main.dir/src/main.cpp.o -c /home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbe_5/src/main.cpp
+CMakeFiles/Main.dir/src/main3.cpp.o: CMakeFiles/Main.dir/flags.make
+CMakeFiles/Main.dir/src/main3.cpp.o: /home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbe_5/src/main3.cpp
+CMakeFiles/Main.dir/src/main3.cpp.o: CMakeFiles/Main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbe_5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Main.dir/src/main3.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Main.dir/src/main3.cpp.o -MF CMakeFiles/Main.dir/src/main3.cpp.o.d -o CMakeFiles/Main.dir/src/main3.cpp.o -c /home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbe_5/src/main3.cpp
 
-CMakeFiles/Main.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Main.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbe_5/src/main.cpp > CMakeFiles/Main.dir/src/main.cpp.i
+CMakeFiles/Main.dir/src/main3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Main.dir/src/main3.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbe_5/src/main3.cpp > CMakeFiles/Main.dir/src/main3.cpp.i
 
-CMakeFiles/Main.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Main.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbe_5/src/main.cpp -o CMakeFiles/Main.dir/src/main.cpp.s
+CMakeFiles/Main.dir/src/main3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Main.dir/src/main3.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbe_5/src/main3.cpp -o CMakeFiles/Main.dir/src/main3.cpp.s
 
 # Object files for target Main
 Main_OBJECTS = \
-"CMakeFiles/Main.dir/src/main.cpp.o"
+"CMakeFiles/Main.dir/src/main3.cpp.o"
 
 # External object files for target Main
 Main_EXTERNAL_OBJECTS =
 
-Main: CMakeFiles/Main.dir/src/main.cpp.o
+Main: CMakeFiles/Main.dir/src/main3.cpp.o
 Main: CMakeFiles/Main.dir/build.make
 Main: /usr/local/lib/libopencv_gapi.so.4.10.0
 Main: /usr/local/lib/libopencv_stitching.so.4.10.0

@@ -1,3 +1,0 @@
-/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbe_5/zadatak_5/build/CMakeFiles/Main.dir
-/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbe_5/zadatak_5/build/CMakeFiles/edit_cache.dir
-/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbe_5/zadatak_5/build/CMakeFiles/rebuild_cache.dir
