@@ -218,15 +218,6 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 OpenCV_DIR:PATH=/usr/local/lib/cmake/opencv4
 
 //Value Computed by CMake
-Project_BINARY_DIR:STATIC=/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignment_6/build
-
-//Value Computed by CMake
-Project_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-Project_SOURCE_DIR:STATIC=/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignment_6
-
-//Value Computed by CMake
 vjezbe_5_BINARY_DIR:STATIC=/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignment_6/build
 
 //Value Computed by CMake

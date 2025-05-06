@@ -1,4 +1,4 @@
-# Install script for directory: /home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignmet_1
+# Install script for directory: /home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignment_1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignmet_1/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignment_1/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

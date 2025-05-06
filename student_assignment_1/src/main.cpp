@@ -1,39 +1,40 @@
 #include <iostream>
 #include <vector>
-#include <algorithm> // for std::sort
-#include <limits> // for std::numeric_limits
+#include <algorithm>
+#include <limits>
 
-// Function to perform binary search on a sorted vector
+// --- Classic binary search on a sorted vector ---
+// Returns the index of 'target' if found, otherwise -1.
 int binarySearch(const std::vector<int>& arr, int target) {
     int left = 0;
     int right = arr.size() - 1;
 
     while (left <= right) {
-        int mid = left + (right - left) / 2;
+        int mid = left + (right - left) / 2; // Avoids overflow
         if (arr[mid] == target) {
-            return mid; // target found, return index
+            return mid;
         } else if (arr[mid] < target) {
             left = mid + 1;
         } else {
             right = mid - 1;
         }
     }
-    return -1; // target not found
+    return -1;
 }
 
 int main() {
-    // Initialize vector with 20 random integers
+    // --- Initialize and sort the array ---
     std::vector<int> arr = {34, 7, 23, 32, 5, 62, 78, 1, 9, 12, 45, 67, 89, 21, 3, 8, 15, 27, 50, 40};
-
-    // Sort the vector for binary search
     std::sort(arr.begin(), arr.end());
 
+    // --- Display the sorted array ---
     std::cout << "Sorted array: ";
     for (int num : arr) {
         std::cout << num << " ";
     }
     std::cout << std::endl;
 
+    // --- Interactive search loop ---
     while (true) {
         std::cout << "Enter a number to search (or type 'exit' to quit): ";
         std::string input;
@@ -44,7 +45,7 @@ int main() {
         }
 
         try {
-            int target = std::stoi(input);
+            int target = std::stoi(input); // Convert input to integer
             int index = binarySearch(arr, target);
             if (index != -1) {
                 std::cout << "Number found at index: " << index << std::endl;

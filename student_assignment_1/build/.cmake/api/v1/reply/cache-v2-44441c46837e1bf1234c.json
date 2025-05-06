@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignmet_1/build"
+			"value" : "/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignment_1/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignmet_1/build/CMakeFiles/pkgRedirects"
+			"value" : "/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignment_1/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -603,7 +603,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignmet_1"
+			"value" : "/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignment_1"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1191,7 +1191,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignmet_1/build"
+			"value" : "/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignment_1/build"
 		},
 		{
 			"name" : "student_assignmet_1_IS_TOP_LEVEL",
@@ -1215,7 +1215,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignmet_1"
+			"value" : "/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignment_1"
 		}
 	],
 	"kind" : "cache",

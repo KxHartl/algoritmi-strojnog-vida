@@ -1,5 +1,5 @@
 CMakeFiles/Main.dir/src/main.cpp.o: \
- /home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignmet_1/src/main.cpp \
+ /home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/student_assignment_1/src/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
