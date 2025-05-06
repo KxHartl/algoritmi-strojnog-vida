@@ -199,7 +199,7 @@ int main() {
     namedWindow("HSV Controls", WINDOW_AUTOSIZE);
 
     // --- Controls for adaptive thresholding and morphology ---
-    createTrackbar("Block Size", "Controls", &blockSize_slider, 51, on_blockSize_trackbar);
+    createTrackbar("Block Size", "Controls", &blockSize_slider, 151, on_blockSize_trackbar);
     createTrackbar("C Value", "Controls", &C_slider, 100, on_C_trackbar);
     createTrackbar("Min Area", "Controls", &min_area_slider, 1000, on_min_area_trackbar);
     createTrackbar("Kernel Size", "Controls", &kernel_size_slider, 21, on_kernel_size_trackbar);

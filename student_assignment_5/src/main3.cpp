@@ -52,8 +52,8 @@ int main() {
     namedWindow("Original", WINDOW_AUTOSIZE);
     namedWindow("Controls", WINDOW_AUTOSIZE);
 
-    createTrackbar("Canny Threshold1", "Controls", &cannyThreshold1, 500, onTrackbar);
-    createTrackbar("Canny Threshold2", "Controls", &cannyThreshold2, 500, onTrackbar);
+    createTrackbar("Canny Threshold1", "Controls", &cannyThreshold1, 1000, onTrackbar);
+    createTrackbar("Canny Threshold2", "Controls", &cannyThreshold2, 1000, onTrackbar);
     createTrackbar("Hough Threshold", "Controls", &houghThreshold, 100, onTrackbar);
     createTrackbar("Min Line Length", "Controls", &minLineLength, 200, onTrackbar);
     createTrackbar("Max Line Gap", "Controls", &maxLineGap, 50, onTrackbar);
