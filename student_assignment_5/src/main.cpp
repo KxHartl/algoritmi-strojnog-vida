@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
     // --- Load input image ---
-    Mat image = imread("../data/shapes.png", 1);
+    Mat image = imread("../data/1.png", 1);
     if (image.empty()) {
         cout << "Could not open or find the image!" << endl;
         return -1;
