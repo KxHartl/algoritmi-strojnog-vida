@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbanje/build",
-  "command": "/usr/bin/g++  -isystem /usr/local/include/opencv4 -g -o CMakeFiles/Main.dir/src/main.cpp.o -c /home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbanje/src/main.cpp",
-  "file": "/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbanje/src/main.cpp",
-  "output": "CMakeFiles/Main.dir/src/main.cpp.o"
-}
-]

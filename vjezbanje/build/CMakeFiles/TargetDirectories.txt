@@ -1,3 +1,0 @@
-/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbanje/build/CMakeFiles/Main.dir
-/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbanje/build/CMakeFiles/edit_cache.dir
-/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbanje/build/CMakeFiles/rebuild_cache.dir
