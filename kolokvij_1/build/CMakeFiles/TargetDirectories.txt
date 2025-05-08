@@ -1,0 +1,2 @@
+/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/kolokvij_1/build/CMakeFiles/edit_cache.dir
+/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/kolokvij_1/build/CMakeFiles/rebuild_cache.dir
