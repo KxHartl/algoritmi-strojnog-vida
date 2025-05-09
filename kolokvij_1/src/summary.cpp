@@ -23,6 +23,11 @@ int add_and_insert(int addNumber){
     return 0;
 }
 
+void on_trackbar(int, void*) {
+     
+}
+
+
 
 // --- Main function --- //
 int main(void){
@@ -106,6 +111,12 @@ int main(void){
     int d = 5, sigmaColor = 50, sigmaSpace = 50;
     bilateralFilter(noisyImage, filteredImage, d, sigmaColor, sigmaSpace);
 
+    // --- HSV Filtering --- //
+    int h_min = 10, s_min = 10, v_min = 10, h_max = 200, s_max = 200, v_max = 200;
+    Mat hsvMask;
+    inRange(hsvImage, Scalar(h_min, s_min, v_min), Scalar(h_max, s_max, v_max), hsvMask);
+
+
     // --- Thresholding and Morphology --- //#######################################################################################################
     Mat binaryImage;
     int blockSize = 3, C = 25;
@@ -123,15 +134,111 @@ int main(void){
     findContours(binaryImage, contours, hierarchy, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);
 
     // --- Draw Contours and Bounding Boxes --- //
+    Mat resultsImage;
+    RNG rng(12345);
     for (size_t i = 0; i < contours.size(); i++) {
         Scalar color = Scalar(rng.uniform(0,256), rng.uniform(0,256), rng.uniform(0,256));
-        drawContours(result, contours, static_cast<int>(i), color, 2);
+        drawContours(resultsImage, contours, static_cast<int>(i), color, 2);
         Rect bounding = boundingRect(contours[i]);
-        rectangle(result, bounding, color, 2);
+        rectangle(resultsImage, bounding, color, 2);
+    }
+
+    // --- Edge and Line Detection --- //#############################################################################################################
+    // --- Canny lines --- //
+    Mat edges;
+    int threshold1 = 150, threshold2 = 500, apertureSize = 3;
+    Canny(inputImage, edges, threshold1, threshold2, apertureSize);
+
+    // --- Hough Lines --- //
+    resultsImage = inputImage.clone();
+    vector<Vec4i> lines;
+    int houghThreshold = 20, minLineLength = 40, maxLineGap = 1;
+    HoughLinesP(edges, lines, 1, CV_PI/180, houghThreshold, minLineLength, maxLineGap);
+    for (auto& l : lines) {
+        line(resultsImage, Point(l[0], l[1]), Point(l[2], l[3]), Scalar(0,0,255), 2);
+    }
+
+    // --- ArUco Marker --- //#####################################################################################################################
+    // --- Detect Markers --- //
+    Mat visualizationImage = inputImage.clone();
+
+    // --- ArUco Marker Detection Setup ---
+    aruco::Dictionary dictionary = aruco::getPredefinedDictionary(aruco::DICT_4X4_250);
+    aruco::DetectorParameters parameters;
+    parameters.adaptiveThreshWinSizeMin = 23;
+    parameters.adaptiveThreshWinSizeMax = 53;
+    parameters.adaptiveThreshWinSizeStep = 10;
+    
+    aruco::ArucoDetector detector(dictionary, parameters);
+    vector<vector<Point2f>> markerCorners;
+    vector<int> markerIds;
+    detector.detectMarkers(inputImage, markerCorners, markerIds);
+
+    // Visualize detected markers
+    aruco::drawDetectedMarkers(visualizationImage, markerCorners, markerIds);
+
+    // --- Find Homography and Warp --- //
+    // --- Calculate Centers of Each Marker ---
+    vector<Point2f> markerCenters;
+    for (const auto& corners : markerCorners) {
+        Point2f center(0, 0);
+        for (const auto& corner : corners) {
+            center += corner;
+        }
+        center *= 1.0f / 4.0f;
+        markerCenters.push_back(center);
     }
     
+    // --- Identify Corners for Perspective Transform ---
+    // Find indices for top-left, top-right, bottom-right, bottom-left markers
+    int topLeftIdx = -1, topRightIdx = -1, bottomRightIdx = -1, bottomLeftIdx = -1;
+    float minSum = FLT_MAX, maxSum = -FLT_MAX;
+    float minDiff = FLT_MAX, maxDiff = -FLT_MAX;
+    
+    for (size_t i = 0; i < markerCenters.size(); i++) {
+        float sum = markerCenters[i].x + markerCenters[i].y;
+        float diff = markerCenters[i].x - markerCenters[i].y;
+        
+        if (sum < minSum) { minSum = sum; topLeftIdx = i; }
+        if (sum > maxSum) { maxSum = sum; bottomRightIdx = i; }
+        if (diff > maxDiff) { maxDiff = diff; topRightIdx = i; }
+        if (diff < minDiff) { minDiff = diff; bottomLeftIdx = i; }
+    }
+    
+    // Source and destination points for homography
+    vector<Point2f> sourcePoints = {
+        markerCenters[topLeftIdx],
+        markerCenters[topRightIdx],
+        markerCenters[bottomRightIdx],
+        markerCenters[bottomLeftIdx]
+    };
+    
+    // --- Compute Output Size for Rectification ---
+    float width1 = norm(sourcePoints[1] - sourcePoints[0]);
+    float width2 = norm(sourcePoints[2] - sourcePoints[3]);
+    float height1 = norm(sourcePoints[3] - sourcePoints[0]);
+    float height2 = norm(sourcePoints[2] - sourcePoints[1]);
+    float avgWidth = (width1 + width2) / 2.0f;
+    float avgHeight = (height1 + height2) / 2.0f;
+    
+    vector<Point2f> destinationPoints = {
+        Point2f(0, 0),
+        Point2f(avgWidth, 0),
+        Point2f(avgWidth, avgHeight),
+        Point2f(0, avgHeight)
+    };
+    
+    // --- Perspective Rectification ---
+    Mat homography = findHomography(sourcePoints, destinationPoints);
+    Mat rectifiedImage;
+    warpPerspective(inputImage, rectifiedImage, homography, Size(avgWidth, avgHeight));
 
 
+    // --- Widows and track bar --- //##############################################################################################################
+    namedWindow("Window", WINDOW_AUTOSIZE);
+
+    int param = 3, max_value = 11;
+    createTrackbar("Param Name", "WindowName", &param, max_value, on_trackbar);
 
     // --- wait for user to exit ---
     while (true) {
