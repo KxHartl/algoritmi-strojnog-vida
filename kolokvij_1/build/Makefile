@@ -116,6 +116,43 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named Osnove_cpp
+
+# Build rule for target.
+Osnove_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Osnove_cpp
+.PHONY : Osnove_cpp
+
+# fast build rule for target.
+Osnove_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Osnove_cpp.dir/build.make CMakeFiles/Osnove_cpp.dir/build
+.PHONY : Osnove_cpp/fast
+
+src/summary.o: src/summary.cpp.o
+.PHONY : src/summary.o
+
+# target to build an object file
+src/summary.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Osnove_cpp.dir/build.make CMakeFiles/Osnove_cpp.dir/src/summary.cpp.o
+.PHONY : src/summary.cpp.o
+
+src/summary.i: src/summary.cpp.i
+.PHONY : src/summary.i
+
+# target to preprocess a source file
+src/summary.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Osnove_cpp.dir/build.make CMakeFiles/Osnove_cpp.dir/src/summary.cpp.i
+.PHONY : src/summary.cpp.i
+
+src/summary.s: src/summary.cpp.s
+.PHONY : src/summary.s
+
+# target to generate assembly for a file
+src/summary.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Osnove_cpp.dir/build.make CMakeFiles/Osnove_cpp.dir/src/summary.cpp.s
+.PHONY : src/summary.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Osnove_cpp"
+	@echo "... src/summary.o"
+	@echo "... src/summary.i"
+	@echo "... src/summary.s"
 .PHONY : help
 
 

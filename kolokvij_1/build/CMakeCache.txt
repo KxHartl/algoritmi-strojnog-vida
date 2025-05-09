@@ -147,7 +147,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Project
+CMAKE_PROJECT_NAME:STATIC=kolokvij_1
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -214,6 +214,9 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//The directory containing a CMake configuration file for OpenCV.
+OpenCV_DIR:PATH=/usr/local/lib/cmake/opencv4
+
 //Value Computed by CMake
 Project_BINARY_DIR:STATIC=/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/kolokvij_1/build
 
@@ -222,6 +225,15 @@ Project_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 Project_SOURCE_DIR:STATIC=/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/kolokvij_1
+
+//Value Computed by CMake
+kolokvij_1_BINARY_DIR:STATIC=/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/kolokvij_1/build
+
+//Value Computed by CMake
+kolokvij_1_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+kolokvij_1_SOURCE_DIR:STATIC=/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/kolokvij_1
 
 
 ########################
@@ -371,6 +383,8 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding OpenCV
+FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr/local][v4.10.0()]
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 
