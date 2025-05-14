@@ -50,5 +50,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Osnove_cpp.dir/DependInfo.cmake"
+  "CMakeFiles/Zadatak2.dir/DependInfo.cmake"
   )

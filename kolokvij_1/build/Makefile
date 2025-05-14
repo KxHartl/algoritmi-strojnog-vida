@@ -117,41 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Osnove_cpp
+# Target rules for targets named Zadatak2
 
 # Build rule for target.
-Osnove_cpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Osnove_cpp
-.PHONY : Osnove_cpp
+Zadatak2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Zadatak2
+.PHONY : Zadatak2
 
 # fast build rule for target.
-Osnove_cpp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Osnove_cpp.dir/build.make CMakeFiles/Osnove_cpp.dir/build
-.PHONY : Osnove_cpp/fast
+Zadatak2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zadatak2.dir/build.make CMakeFiles/Zadatak2.dir/build
+.PHONY : Zadatak2/fast
 
-src/summary.o: src/summary.cpp.o
-.PHONY : src/summary.o
+src/zadatak_2.o: src/zadatak_2.cpp.o
+.PHONY : src/zadatak_2.o
 
 # target to build an object file
-src/summary.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Osnove_cpp.dir/build.make CMakeFiles/Osnove_cpp.dir/src/summary.cpp.o
-.PHONY : src/summary.cpp.o
+src/zadatak_2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zadatak2.dir/build.make CMakeFiles/Zadatak2.dir/src/zadatak_2.cpp.o
+.PHONY : src/zadatak_2.cpp.o
 
-src/summary.i: src/summary.cpp.i
-.PHONY : src/summary.i
+src/zadatak_2.i: src/zadatak_2.cpp.i
+.PHONY : src/zadatak_2.i
 
 # target to preprocess a source file
-src/summary.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Osnove_cpp.dir/build.make CMakeFiles/Osnove_cpp.dir/src/summary.cpp.i
-.PHONY : src/summary.cpp.i
+src/zadatak_2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zadatak2.dir/build.make CMakeFiles/Zadatak2.dir/src/zadatak_2.cpp.i
+.PHONY : src/zadatak_2.cpp.i
 
-src/summary.s: src/summary.cpp.s
-.PHONY : src/summary.s
+src/zadatak_2.s: src/zadatak_2.cpp.s
+.PHONY : src/zadatak_2.s
 
 # target to generate assembly for a file
-src/summary.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Osnove_cpp.dir/build.make CMakeFiles/Osnove_cpp.dir/src/summary.cpp.s
-.PHONY : src/summary.cpp.s
+src/zadatak_2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zadatak2.dir/build.make CMakeFiles/Zadatak2.dir/src/zadatak_2.cpp.s
+.PHONY : src/zadatak_2.cpp.s
 
 # Help Target
 help:
@@ -161,10 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Osnove_cpp"
-	@echo "... src/summary.o"
-	@echo "... src/summary.i"
-	@echo "... src/summary.s"
+	@echo "... Zadatak2"
+	@echo "... src/zadatak_2.o"
+	@echo "... src/zadatak_2.i"
+	@echo "... src/zadatak_2.s"
 .PHONY : help
 
 

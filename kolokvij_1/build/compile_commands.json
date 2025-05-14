@@ -1,8 +1,8 @@
 [
 {
   "directory": "/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/kolokvij_1/build",
-  "command": "/usr/bin/g++  -isystem /usr/local/include/opencv4 -g -o CMakeFiles/Osnove_cpp.dir/src/summary.cpp.o -c /home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/kolokvij_1/src/summary.cpp",
-  "file": "/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/kolokvij_1/src/summary.cpp",
-  "output": "CMakeFiles/Osnove_cpp.dir/src/summary.cpp.o"
+  "command": "/usr/bin/g++  -isystem /usr/local/include/opencv4 -g -o CMakeFiles/Zadatak2.dir/src/zadatak_2.cpp.o -c /home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/kolokvij_1/src/zadatak_2.cpp",
+  "file": "/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/kolokvij_1/src/zadatak_2.cpp",
+  "output": "CMakeFiles/Zadatak2.dir/src/zadatak_2.cpp.o"
 }
 ]

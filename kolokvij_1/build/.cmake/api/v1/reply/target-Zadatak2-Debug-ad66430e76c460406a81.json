@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Osnove_cpp"
+			"path" : "Zadatak2"
 		}
 	],
 	"backtrace" : 1,
@@ -67,7 +67,7 @@
 			]
 		}
 	],
-	"id" : "Osnove_cpp::@6890427a1f51a3e7e1df",
+	"id" : "Zadatak2::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -372,8 +372,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Osnove_cpp",
-	"nameOnDisk" : "Osnove_cpp",
+	"name" : "Zadatak2",
+	"nameOnDisk" : "Zadatak2",
 	"paths" : 
 	{
 		"build" : ".",
@@ -394,7 +394,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/summary.cpp",
+			"path" : "src/zadatak_2.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

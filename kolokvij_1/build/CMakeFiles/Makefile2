@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/kolokvij_
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Osnove_cpp.dir/all
+all: CMakeFiles/Zadatak2.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Osnove_cpp.dir/clean
+clean: CMakeFiles/Zadatak2.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Osnove_cpp.dir
+# Target rules for target CMakeFiles/Zadatak2.dir
 
 # All Build rule for target.
-CMakeFiles/Osnove_cpp.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Osnove_cpp.dir/build.make CMakeFiles/Osnove_cpp.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Osnove_cpp.dir/build.make CMakeFiles/Osnove_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/kolokvij_1/build/CMakeFiles --progress-num=1,2 "Built target Osnove_cpp"
-.PHONY : CMakeFiles/Osnove_cpp.dir/all
+CMakeFiles/Zadatak2.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zadatak2.dir/build.make CMakeFiles/Zadatak2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zadatak2.dir/build.make CMakeFiles/Zadatak2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/kolokvij_1/build/CMakeFiles --progress-num=1,2 "Built target Zadatak2"
+.PHONY : CMakeFiles/Zadatak2.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Osnove_cpp.dir/rule: cmake_check_build_system
+CMakeFiles/Zadatak2.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/kolokvij_1/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Osnove_cpp.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Zadatak2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/kolokvij_1/build/CMakeFiles 0
-.PHONY : CMakeFiles/Osnove_cpp.dir/rule
+.PHONY : CMakeFiles/Zadatak2.dir/rule
 
 # Convenience name for target.
-Osnove_cpp: CMakeFiles/Osnove_cpp.dir/rule
-.PHONY : Osnove_cpp
+Zadatak2: CMakeFiles/Zadatak2.dir/rule
+.PHONY : Zadatak2
 
 # clean rule for target.
-CMakeFiles/Osnove_cpp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Osnove_cpp.dir/build.make CMakeFiles/Osnove_cpp.dir/clean
-.PHONY : CMakeFiles/Osnove_cpp.dir/clean
+CMakeFiles/Zadatak2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zadatak2.dir/build.make CMakeFiles/Zadatak2.dir/clean
+.PHONY : CMakeFiles/Zadatak2.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
