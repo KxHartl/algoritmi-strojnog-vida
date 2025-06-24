@@ -1,0 +1,88 @@
+#include <iostream>
+#include "opencv2/opencv.hpp"
+#include "opencv2/xfeatures2d.hpp"
+
+using namespace cv;
+using namespace cv::xfeatures2d;
+using namespace std;
+
+int main() {
+    // Load the scene and object images in grayscale
+    Mat img_scene = imread("../data//scena.png", IMREAD_GRAYSCALE);
+    Mat img_object = imread("../data//plocica.png", IMREAD_GRAYSCALE);
+    //Mat img_object = imread( "template_matching/podlozka1.png", 0);
+    //Mat img_object = imread( "template_matching/plocica_x_rot.png", 0);
+    //Mat img_object = imread( "template_matching/plocica_vertical.png", 0);
+
+    // Check if images are loaded successfully
+    if (img_object.empty() || img_scene.empty()) {
+        cerr << "Could not open or find the images!" << endl;
+        return -1;
+    }
+
+    // Step 1: Initialize the SURF detector with a specified Hessian threshold
+    int minHessian = 10;
+    Ptr<SURF> detector = SURF::create(minHessian);
+
+    // Detect keypoints and compute descriptors for both images
+    std::vector<KeyPoint> keypoints_object, keypoints_scene;
+    Mat descriptors_object, descriptors_scene;
+    detector->detectAndCompute(img_object, noArray(), keypoints_object, descriptors_object);
+    detector->detectAndCompute(img_scene, noArray(), keypoints_scene, descriptors_scene);
+
+    // Step 2: Initialize a FLANN-based descriptor matcher
+    Ptr<DescriptorMatcher> matcher = DescriptorMatcher::create(DescriptorMatcher::FLANNBASED);
+
+    // Perform K-NN matching to find the two best matches for each descriptor
+    std::vector<std::vector<DMatch>> knn_matches;
+    matcher->knnMatch(descriptors_object, descriptors_scene, knn_matches, 2);
+
+    // Apply the ratio test to filter out weak matches
+    const float ratio_thresh = 0.85f;
+    std::vector<DMatch> good_matches;
+    for (const auto& match_pair : knn_matches) {
+        if (match_pair[0].distance < ratio_thresh * match_pair[1].distance) {
+            good_matches.push_back(match_pair[0]);
+        }
+    }
+
+    // Draw the good matches between the images
+    Mat img_matches;
+    drawMatches(img_object, keypoints_object, img_scene, keypoints_scene, good_matches, img_matches, Scalar::all(-1),
+                Scalar::all(-1), std::vector<char>(), DrawMatchesFlags::NOT_DRAW_SINGLE_POINTS);
+
+    // Extract the coordinates of the good matches' keypoints
+    std::vector<Point2f> obj_points, scene_points;
+    for (const auto& match : good_matches) {
+        obj_points.push_back(keypoints_object[match.queryIdx].pt);
+        scene_points.push_back(keypoints_scene[match.trainIdx].pt);
+    }
+
+    // Compute the homography matrix using RANSAC
+    int ransacMaxIters = 2000;
+    double ransacReprojThreshold = 1.0;
+    Mat H = findHomography(obj_points, scene_points, RANSAC, ransacReprojThreshold, noArray(), ransacMaxIters);
+
+    // Define the four corners of the object image
+    std::vector<Point2f> obj_corners = {
+        Point2f(0, 0),
+        Point2f(static_cast<float>(img_object.cols), 0),
+        Point2f(static_cast<float>(img_object.cols), static_cast<float>(img_object.rows)),
+        Point2f(0, static_cast<float>(img_object.rows))
+    };
+
+    // Transform the object corners to the scene perspective using the homography matrix
+    std::vector<Point2f> scene_corners(4);
+    perspectiveTransform(obj_corners, scene_corners, H);
+
+    // Draw lines connecting the corners of the detected object in the scene
+    for (int i = 0; i < 4; ++i) {
+        line(img_matches, scene_corners[i] + Point2f(static_cast<float>(img_object.cols), 0),
+             scene_corners[(i + 1) % 4] + Point2f(static_cast<float>(img_object.cols), 0), Scalar(0, 255, 0), 4);
+    }
+
+    // Display the result
+    imshow("Good Matches & Object Detection", img_matches);
+    waitKey();
+    return 0;
+}

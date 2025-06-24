@@ -1,0 +1,10 @@
+Theoretical Transformation Matrix:
+5.30288e-17        -0.5    0.866025    0.186603
+   0.866025    0.433013        0.25    0.198205
+       -0.5        0.75    0.433013   -0.256699
+          0           0           0           1
+Approximative overlap set to: 0.8
+Lambda set to: 0.7
+Delta set to: 0.001
+Number of threads set to: 5
+Number of samples set to: 300

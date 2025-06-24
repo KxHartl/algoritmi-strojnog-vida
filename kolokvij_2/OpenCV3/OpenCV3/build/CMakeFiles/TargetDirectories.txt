@@ -1,0 +1,6 @@
+/home/khartl/k2/OpenCV3/OpenCV3/build/CMakeFiles/OpenCV3.dir
+/home/khartl/k2/OpenCV3/OpenCV3/build/CMakeFiles/test.dir
+/home/khartl/k2/OpenCV3/OpenCV3/build/CMakeFiles/Zadatak3.dir
+/home/khartl/k2/OpenCV3/OpenCV3/build/CMakeFiles/Zadatak1.dir
+/home/khartl/k2/OpenCV3/OpenCV3/build/CMakeFiles/edit_cache.dir
+/home/khartl/k2/OpenCV3/OpenCV3/build/CMakeFiles/rebuild_cache.dir

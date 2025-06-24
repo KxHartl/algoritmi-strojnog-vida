@@ -1,0 +1,150 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "GeneratePointCloud",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "p_04_1_pass_through_primjer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p_04_1_pass_through_primjer-Debug-b36bcbe76ee88eccfc07.json",
+					"name" : "p_04_1_pass_through_primjer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p_04_2_pass_through_primjer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p_04_2_pass_through_primjer-Debug-ece92a771535d97010af.json",
+					"name" : "p_04_2_pass_through_primjer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p_04_pass_through_primjer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p_04_pass_through_primjer-Debug-baf1c59e6b88119ddc8d.json",
+					"name" : "p_04_pass_through_primjer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p_05_statistical_outlier_primjer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p_05_statistical_outlier_primjer-Debug-8b85eec0291a1d376b30.json",
+					"name" : "p_05_statistical_outlier_primjer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p_06_vokselizacija_pc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p_06_vokselizacija_pc-Debug-0bab94991c50223fbbca.json",
+					"name" : "p_06_vokselizacija_pc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p_07_ransac_plane::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p_07_ransac_plane-Debug-fd4096dcc4d070748ed7.json",
+					"name" : "p_07_ransac_plane",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p_08_ransac::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p_08_ransac-Debug-8db0bf21bb029adca094.json",
+					"name" : "p_08_ransac",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p_09_ciscenje::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p_09_ciscenje-Debug-3243b62d5271b93254af.json",
+					"name" : "p_09_ciscenje",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p_10_klasterizacija::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p_10_klasterizacija-Debug-91b41fd340a45f349658.json",
+					"name" : "p_10_klasterizacija",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p_11_transformacija_PC::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p_11_transformacija_PC-Debug-2454700505c7ac335e48.json",
+					"name" : "p_11_transformacija_PC",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p_12_ICP::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p_12_ICP-Debug-774f889953457d62300b.json",
+					"name" : "p_12_ICP",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/kolokvij_2/PCL/PCL/03_Case study - PCL/build",
+		"source" : "/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/kolokvij_2/PCL/PCL/03_Case study - PCL"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,7 @@
+/home/ivan/Desktop/Algoritmi strojnog vida/Kol_2/02_Point cloud registration/Vjezbe/build/CMakeFiles/pcd_transformation.dir
+/home/ivan/Desktop/Algoritmi strojnog vida/Kol_2/02_Point cloud registration/Vjezbe/build/CMakeFiles/kfpcs_registration.dir
+/home/ivan/Desktop/Algoritmi strojnog vida/Kol_2/02_Point cloud registration/Vjezbe/build/CMakeFiles/downsampling_voxels.dir
+/home/ivan/Desktop/Algoritmi strojnog vida/Kol_2/02_Point cloud registration/Vjezbe/build/CMakeFiles/cutting_pcd.dir
+/home/ivan/Desktop/Algoritmi strojnog vida/Kol_2/02_Point cloud registration/Vjezbe/build/CMakeFiles/bounding_box.dir
+/home/ivan/Desktop/Algoritmi strojnog vida/Kol_2/02_Point cloud registration/Vjezbe/build/CMakeFiles/edit_cache.dir
+/home/ivan/Desktop/Algoritmi strojnog vida/Kol_2/02_Point cloud registration/Vjezbe/build/CMakeFiles/rebuild_cache.dir

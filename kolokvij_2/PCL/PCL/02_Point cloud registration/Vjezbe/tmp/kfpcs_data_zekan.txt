@@ -1,0 +1,135 @@
+=== KFPCS Registration Log ===
+Log created at: Jun 19 2025 19:13:50
+
+Theoretical Transformation Matrix:
+5.30288e-17        -0.5    0.866025    0.186603
+   0.866025    0.433013        0.25    0.198205
+       -0.5        0.75    0.433013   -0.256699
+          0           0           0           1
+
+=== Parameters ===
+Target points: 959
+Source points: 959
+Approximative overlap: 0.8
+Lambda: 0.7
+Delta: 0.001
+Number of threads: 5
+Number of samples: 300
+
+=== Registration Results ===
+
+--- Iteration 1 ---
+Final Transformation Matrix:
+  0.086892   0.532569   0.841915 0.00785116
+ -0.888818  -0.340255   0.306967   0.176821
+  0.449947  -0.774982   0.443791  -0.340784
+         0          0          0          1
+Registration time: 577.134 ms
+Frobenius Norm: 2.83241
+Normalized Frobenius Norm: 1.39205
+RMSE: 0.00290495
+
+--- Iteration 2 ---
+Final Transformation Matrix:
+  0.120338   0.470675   0.874062 -0.0208391
+ -0.859196  -0.391672   0.329204   0.152825
+  0.497294  -0.790606   0.357269  -0.348892
+         0          0          0          1
+Registration time: 452.14 ms
+Frobenius Norm: 2.83671
+Normalized Frobenius Norm: 1.39417
+RMSE: 0.00286432
+
+--- Iteration 3 ---
+Final Transformation Matrix:
+  0.0348379    0.474329    0.879658 -0.00318674
+  -0.862347   -0.430603    0.266342    0.146503
+   0.505117   -0.767849    0.394035   -0.346119
+          0           0           0           1
+Registration time: 375.15 ms
+Frobenius Norm: 2.83662
+Normalized Frobenius Norm: 1.39412
+RMSE: 0.00110682
+
+--- Iteration 4 ---
+Final Transformation Matrix:
+-0.00301436    0.609275    0.792953   0.0518021
+  -0.872697   -0.388768    0.295397    0.155438
+   0.488253   -0.691117    0.532884    -0.32863
+          0           0           0           1
+Registration time: 1663.14 ms
+Frobenius Norm: 2.83284
+Normalized Frobenius Norm: 1.39227
+RMSE: 0.00628672
+
+--- Iteration 5 ---
+Final Transformation Matrix:
+-0.0316285   0.550521   0.834222  0.0386823
+ -0.874782  -0.418983   0.243329    0.15483
+  0.483483  -0.722067   0.494838  -0.337068
+         0          0          0          1
+Registration time: 3871.45 ms
+Frobenius Norm: 2.83376
+Normalized Frobenius Norm: 1.39272
+RMSE: 0.00147545
+
+--- Iteration 6 ---
+Final Transformation Matrix:
+-0.00692269    0.527571    0.849483   0.0252608
+  -0.882934    -0.40203    0.242485    0.162049
+   0.469446   -0.748359    0.468593   -0.339437
+          0           0           0           1
+Registration time: 364.64 ms
+Frobenius Norm: 2.83422
+Normalized Frobenius Norm: 1.39294
+RMSE: 0.00107073
+
+--- Iteration 7 ---
+Final Transformation Matrix:
+-0.0513996   0.573333   0.817709  0.0496277
+ -0.878087  -0.415986   0.236472    0.15451
+  0.475733  -0.705865   0.524817  -0.331746
+         0          0          0          1
+Registration time: 863.1 ms
+Frobenius Norm: 2.83307
+Normalized Frobenius Norm: 1.39238
+RMSE: 0.00390329
+
+--- Iteration 8 ---
+Final Transformation Matrix:
+-0.0384969   0.560606   0.827188  0.0421897
+ -0.876686   -0.41619   0.241262   0.157881
+   0.47952  -0.715896   0.507497  -0.336372
+         0          0          0          1
+Registration time: 1030.81 ms
+Frobenius Norm: 2.83352
+Normalized Frobenius Norm: 1.3926
+RMSE: 0.00310857
+
+--- Iteration 9 ---
+Final Transformation Matrix:
+-0.0214595   0.535684   0.844145  0.0312095
+ -0.881085  -0.409151   0.237244   0.159044
+  0.472471  -0.738673   0.480764  -0.337953
+         0          0          0          1
+Registration time: 2096.11 ms
+Frobenius Norm: 2.83404
+Normalized Frobenius Norm: 1.39286
+RMSE: 0.00152635
+
+--- Iteration 10 ---
+Final Transformation Matrix:
+ 0.029597  0.518781  0.854395 0.0140327
+-0.870449 -0.406813  0.277167  0.153982
+ 0.491368 -0.751911  0.439532 -0.342635
+        0         0         0         1
+Registration time: 3972.5 ms
+Frobenius Norm: 2.83514
+Normalized Frobenius Norm: 1.3934
+RMSE: 0.00138226
+
+=== SUMMARY ===
+Mean time: 1526.62 ms, CI: [-1099.53, 4152.77]
+Mean RMSE: 0.00256295, CI: [-0.000546184, 0.00567207]
+Mean Frobenius norm: 2.83423, CI: [2.8314, 2.83706]
+Mean Normalized Frobenius norm: 1.39295, CI: [1.39156, 1.39434]

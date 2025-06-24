@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/khartl/k2/OpenCV3/OpenCV3/build",
+  "command": "/usr/bin/c++  -isystem /usr/local/include/opencv4 -g -std=c++17 -o CMakeFiles/OpenCV3.dir/src/vj3.cpp.o -c /home/khartl/k2/OpenCV3/OpenCV3/src/vj3.cpp",
+  "file": "/home/khartl/k2/OpenCV3/OpenCV3/src/vj3.cpp",
+  "output": "CMakeFiles/OpenCV3.dir/src/vj3.cpp.o"
+},
+{
+  "directory": "/home/khartl/k2/OpenCV3/OpenCV3/build",
+  "command": "/usr/bin/c++  -isystem /usr/local/include/opencv4 -g -std=c++17 -o CMakeFiles/test.dir/src/test.cpp.o -c /home/khartl/k2/OpenCV3/OpenCV3/src/test.cpp",
+  "file": "/home/khartl/k2/OpenCV3/OpenCV3/src/test.cpp",
+  "output": "CMakeFiles/test.dir/src/test.cpp.o"
+},
+{
+  "directory": "/home/khartl/k2/OpenCV3/OpenCV3/build",
+  "command": "/usr/bin/c++  -isystem /usr/local/include/opencv4 -g -std=c++17 -o CMakeFiles/Zadatak3.dir/src/zadatak3.cpp.o -c /home/khartl/k2/OpenCV3/OpenCV3/src/zadatak3.cpp",
+  "file": "/home/khartl/k2/OpenCV3/OpenCV3/src/zadatak3.cpp",
+  "output": "CMakeFiles/Zadatak3.dir/src/zadatak3.cpp.o"
+},
+{
+  "directory": "/home/khartl/k2/OpenCV3/OpenCV3/build",
+  "command": "/usr/bin/c++  -isystem /usr/local/include/opencv4 -g -std=c++17 -o CMakeFiles/Zadatak1.dir/src/zadatak1.cpp.o -c /home/khartl/k2/OpenCV3/OpenCV3/src/zadatak1.cpp",
+  "file": "/home/khartl/k2/OpenCV3/OpenCV3/src/zadatak1.cpp",
+  "output": "CMakeFiles/Zadatak1.dir/src/zadatak1.cpp.o"
+}
+]

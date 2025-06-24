@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "OpenCV3",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "OpenCV3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OpenCV3-Debug-37eeec5b8fe06e1ba562.json",
+					"name" : "OpenCV3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Zadatak1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Zadatak1-Debug-a7d4b71dab5b1fad2de7.json",
+					"name" : "Zadatak1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Zadatak3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Zadatak3-Debug-9c2fdb1a8ba1988d330c.json",
+					"name" : "Zadatak3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test-Debug-337076edde89ac7823a4.json",
+					"name" : "test",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/khartl/k2/OpenCV3/OpenCV3/build",
+		"source" : "/home/khartl/k2/OpenCV3/OpenCV3"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

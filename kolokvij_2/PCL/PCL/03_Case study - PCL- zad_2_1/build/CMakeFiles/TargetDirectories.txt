@@ -1,0 +1,13 @@
+/home/ivan/Desktop/Algoritmi strojnog vida/Kol_2/03_Case study - PCL- zad_2_1/build/CMakeFiles/p_04_1_pass_through_primjer.dir
+/home/ivan/Desktop/Algoritmi strojnog vida/Kol_2/03_Case study - PCL- zad_2_1/build/CMakeFiles/p_04_2_pass_through_primjer.dir
+/home/ivan/Desktop/Algoritmi strojnog vida/Kol_2/03_Case study - PCL- zad_2_1/build/CMakeFiles/p_04_pass_through_primjer.dir
+/home/ivan/Desktop/Algoritmi strojnog vida/Kol_2/03_Case study - PCL- zad_2_1/build/CMakeFiles/p_05_statistical_outlier_primjer.dir
+/home/ivan/Desktop/Algoritmi strojnog vida/Kol_2/03_Case study - PCL- zad_2_1/build/CMakeFiles/p_06_vokselizacija_pc.dir
+/home/ivan/Desktop/Algoritmi strojnog vida/Kol_2/03_Case study - PCL- zad_2_1/build/CMakeFiles/p_07_ransac_plane.dir
+/home/ivan/Desktop/Algoritmi strojnog vida/Kol_2/03_Case study - PCL- zad_2_1/build/CMakeFiles/p_08_ransac.dir
+/home/ivan/Desktop/Algoritmi strojnog vida/Kol_2/03_Case study - PCL- zad_2_1/build/CMakeFiles/p_09_ciscenje.dir
+/home/ivan/Desktop/Algoritmi strojnog vida/Kol_2/03_Case study - PCL- zad_2_1/build/CMakeFiles/p_10_klasterizacija.dir
+/home/ivan/Desktop/Algoritmi strojnog vida/Kol_2/03_Case study - PCL- zad_2_1/build/CMakeFiles/p_11_transformacija_PC.dir
+/home/ivan/Desktop/Algoritmi strojnog vida/Kol_2/03_Case study - PCL- zad_2_1/build/CMakeFiles/p_12_ICP.dir
+/home/ivan/Desktop/Algoritmi strojnog vida/Kol_2/03_Case study - PCL- zad_2_1/build/CMakeFiles/edit_cache.dir
+/home/ivan/Desktop/Algoritmi strojnog vida/Kol_2/03_Case study - PCL- zad_2_1/build/CMakeFiles/rebuild_cache.dir
