@@ -2,7 +2,7 @@
 
 **Algoritmi strojnog vida**
 
-> Course exercises – Machine Vision Algorithms (Algoritmi strojnog vida), FSB, University of Zagreb, 2025
+> Course exercises for Machine Vision Algorithms (Algoritmi strojnog vida), FSB, University of Zagreb, 2025
 
 ![C++](https://img.shields.io/badge/C%2B%2B-17-00599C?logo=cplusplus&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white)
@@ -26,7 +26,6 @@ registration of point clouds.
 | `vjezbe_4` | Thresholding |
 | `vjezbe_5` | Object and shape localisation |
 | `vjezbe_6` | Template and feature matching |
-| `feature_matching` | Exercise material for feature matching with ORB and for ArUco perspective correction |
 
 ### Assignments
 
@@ -45,6 +44,14 @@ registration of point clouds.
 | `kolokvij_1` | Filtering, adaptive thresholding and contour detection per image region, and a C++ recap (`summary.cpp`) |
 | `kolokvij_2/OpenCV3` | Object detection with ORB and SURF feature matching and a homography |
 | `kolokvij_2/PCL` | Point cloud generation and filtering (pass-through, statistical outlier removal, voxel grid), registration with K-FPCS, and a case study with RANSAC plane fitting, clustering, transformation and ICP on recorded scenes |
+
+The case study is in four folders under `kolokvij_2/PCL/PCL/`: `03_Case study - PCL` and the
+task 2 variants `- zad_2`, `- zad_2_1` and `- zad_2_2`.
+
+The course material is not in the repository: the exercise sheets, the midterm sheet and the
+lecture PDFs, and the point cloud scenes the PCL programs read (`asv_dataset/` in each case study
+folder and `pcl_ws/data/` in `01_3D vision and point cloud data`). They come from the course
+pages of Machine Vision Algorithms at FSB. Copy them into those folders to run the PCL programs.
 
 ## How to build
 

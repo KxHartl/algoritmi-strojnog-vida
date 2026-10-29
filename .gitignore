@@ -1,0 +1,24 @@
+# Build output
+**/build/
+**/CMakeFiles/
+**/CMakeCache.txt
+**/cmake_install.cmake
+*.o
+*.out
+*.exe
+*.zip
+kolokvij_2/PCL/PCL/02_Point cloud registration/Vjezbe/data/bounding_box
+
+# Course material from the teachers (exercise sheets, exam, lectures).
+# Kept locally, not published.
+*.pdf
+feature_matching/
+
+# Point cloud datasets provided by the course. Kept locally, not published.
+**/asv_dataset/
+kolokvij_2/PCL/PCL/01_3D vision and point cloud data/pcl_ws/data/
+
+# Editor and agent temp files
+**/.codex
+*.swp
+*~

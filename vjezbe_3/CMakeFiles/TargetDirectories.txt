@@ -1,3 +1,0 @@
-/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbe_3/CMakeFiles/vjezbe3.dir
-/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbe_3/CMakeFiles/edit_cache.dir
-/home/khartl/FSB/semestar_8/algoritmi_strojnog_vida/vjezbe_3/CMakeFiles/rebuild_cache.dir
