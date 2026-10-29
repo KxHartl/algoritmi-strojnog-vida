@@ -68,3 +68,7 @@ make
 
 `kolokvij_2/OpenCV3/OpenCV3/src/zadatak3.cpp` uses SURF, which needs OpenCV built with the contrib
 `xfeatures2d` module.
+
+## License
+
+[Apache-2.0](LICENSE). It covers the author's own work in this repository. Third-party parts keep their own licences.
